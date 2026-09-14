@@ -4,9 +4,15 @@
 
 .secondary-title {
     margin: 60px 0px 40px 20px;
+    padding-bottom: 2.5px;
 
     font-size: 1.2em;
     font-weight: 500;
+}
+
+.secondary-title:has(+ .sobre-list:not(.horizontal)) {
+    margin-top: 90px;
+    margin-bottom: 16px;
 }
 
 .tertiary-title {
@@ -45,7 +51,7 @@
     content: "";
     position: absolute;
     display: inline-block;
-    margin-top: 3.5px;
+    margin-top: 5px;
     left: 16px;
 
     width: 10px;
@@ -57,6 +63,10 @@
     z-index: 2;
 
     background-color: var(--bg);
+}
+
+.sobre-list.no-line::before {
+    display: none;
 }
 
 .horizontal {
@@ -91,7 +101,7 @@
 .horizontal::before {
     content: "";
     position: absolute;
-    top: -15px;
+    top: -14px;
     left: 0;
     width: 98%;
     height: 1px;
@@ -107,7 +117,7 @@
 .horizontal li::after {
     content: "";
     position: absolute;
-    top: -21.6px;
+    top: -20.1px;
     left: 98%;
 
     width: 10px;
@@ -119,6 +129,31 @@
     z-index: 2;
 
     background-color: var(--bg);
+}
+
+.timeline-item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1em;
+    width: 100%;
+}
+
+.timeline-item .tertiary-title {
+    font-size: 1em;
+    flex: 1;
+    min-width: 0;
+    text-indent: 2.4em;
+}
+
+.timeline-period {
+    flex-shrink: 0;
+    margin-left: auto;
+    text-align: right;
+    white-space: nowrap;
+    font-size: 0.9em;
+    font-weight: 200;
+    color: var(--gray);
 }
 
 .duo-frame {
