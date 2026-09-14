@@ -152,7 +152,8 @@
     font-size: 1em;
     flex: 1;
     min-width: 0;
-    text-indent: 2.4em;
+    text-indent: 0;
+    padding-left: 2.4em;
 
     margin-bottom: 0.5em;
 }

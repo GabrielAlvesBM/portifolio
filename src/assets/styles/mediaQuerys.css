@@ -143,6 +143,24 @@
         border-radius: 50px 50px 5px 5px;
     }
 
+
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.15em;
+
+        margin-bottom: 0.5em;
+    }
+
+    .timeline-period {
+        margin-left: 2.7em;
+        text-align: left;
+        white-space: normal;
+    }
+
+    .timeline-item .tertiary-title {
+        margin-bottom: 0.2em;
+    }
     
     .sidebar-modal.actived {
         top: 0px;
