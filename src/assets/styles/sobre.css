@@ -11,7 +11,7 @@
 }
 
 .secondary-title:has(+ .sobre-list:not(.horizontal)) {
-    margin-top: 90px;
+    margin-top: 80px;
     margin-bottom: 16px;
 }
 
@@ -28,6 +28,15 @@
 
 .sobre-list p {
     margin: 0 0 1.2em 3em;
+}
+
+.sobre-list .timeline-item ~ p {
+    margin-bottom: 0.6em;
+    line-height: 1.4;
+}
+
+.sobre-list li:has(.timeline-item) {
+    margin-bottom: 2.2em;
 }
 
 .sobre-list {
@@ -144,6 +153,8 @@
     flex: 1;
     min-width: 0;
     text-indent: 2.4em;
+
+    margin-bottom: 0.5em;
 }
 
 .timeline-period {
@@ -153,7 +164,7 @@
     white-space: nowrap;
     font-size: 0.9em;
     font-weight: 200;
-    color: var(--gray);
+    color: color-mix(in srgb, var(--gray) 60%, var(--white));
 }
 
 .duo-frame {
