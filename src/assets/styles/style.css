@@ -254,7 +254,7 @@ p {
 .next-page a::before {
     content: "";
     position: absolute;
-    top: 85%;
+    top: 100%;
     left: 0;
     background-color: var(--white);
 
