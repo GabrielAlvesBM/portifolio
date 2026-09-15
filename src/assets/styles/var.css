@@ -23,6 +23,12 @@
     --li-projetos: #696869;
 
     --selection-color: #a52a2a99;
+
+    --scrollbar-size: 8px;
+    --scrollbar-track: transparent;
+    --scrollbar-thumb: #3f566e88;
+    --scrollbar-thumb-hover: #5a7390cc;
+    --scrollbar-thumb-active: #7a92ad;
 }
 
 .lightmode {
@@ -47,4 +53,9 @@
     --li-projetos: #696869;
 
     --selection-color: #a52a2a;
+
+    --scrollbar-track: transparent;
+    --scrollbar-thumb: #0b0c1580;
+    --scrollbar-thumb-hover: #0b0c15b3;
+    --scrollbar-thumb-active: #0b0c15;
 }
